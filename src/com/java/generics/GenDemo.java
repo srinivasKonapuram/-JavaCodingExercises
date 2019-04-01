@@ -1,39 +1,40 @@
 package com.java.generics;
 
-class Gen<T, V> {
+class GenericDemo<IntegerGeneric, StringGeneric> {
 
-	T ob;
-	V ob1;
+	IntegerGeneric myInteger;
+	StringGeneric myString;
 
-	Gen(T o, V v) {
+	GenericDemo(IntegerGeneric first, StringGeneric second) {
 		// super();
-		this.ob = o;
-		this.ob1 = v;
+		this.myInteger = first;
+		this.myString = second;
 	}
 
-	T getob() {
+	IntegerGeneric myIntegerFunc() {
 
-		return ob;
+		return myInteger;
 
 	}
 
-	V getob1() {
-		return ob1;
+	StringGeneric myStringFunc() {
+		return myString;
 	}
 
 	void showType() {
-		System.out.println("type T is " + ob.getClass().getName());
-		System.out.println("type t is " + ob1.getClass().getName());
+		System.out.println("type T is " + myInteger.getClass().getName());
+		System.out.println("type t is " + myString.getClass().getName());
 	}
 }
 
 class GenDemo {
 	public static void main(String[] args) {
-		Gen<Integer, String> iOb;
-		iOb = new Gen<Integer, String>(88, "srinu");
-		iOb.showType();
-		int v = iOb.getob();
-		int str = iOb.getob();
-		System.out.println("value of T is :" + v + " value of T" + str);
+		GenericDemo<Integer, String> genericObject;
+		genericObject = new GenericDemo<Integer, String>(88, "srinu");
+	
+		genericObject.showType();
+		int value = genericObject.myIntegerFunc();
+		String str = genericObject.myStringFunc();
+		System.out.println("value of IntegerGeneric is :" + value + " /" + "value of StringGeneric:" + str);
 	}
 }
