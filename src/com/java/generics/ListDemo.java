@@ -7,7 +7,7 @@ public class ListDemo {
 
 		ArrayList<Integer> data = new ArrayList<Integer>();
 
-		data.add(2);
+		data.add(1);
 		data.add(3);
 		data.add(3);
 		System.out.println(" list is " + data);
@@ -19,6 +19,6 @@ public class ListDemo {
 			sum += i;
 		}
 		System.out.println(" sum of array is:" + sum);
-	
+
 	}
 }

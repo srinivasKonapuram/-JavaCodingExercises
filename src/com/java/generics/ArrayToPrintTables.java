@@ -1,5 +1,9 @@
 package com.java.generics;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class ArrayToPrintTables {
 
 	public static void main(String[] args) {
@@ -36,6 +40,11 @@ public class ArrayToPrintTables {
 				System.out.print(myarray[i][j] + "\t");
 			}
 			System.out.println("");
+	
 		}
+		DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
+		Date dateobj = new Date();
+		System.out.println(df.format(dateobj));
 	}
+	
 }

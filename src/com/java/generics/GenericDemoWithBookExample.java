@@ -12,7 +12,9 @@ class Books<Integer, string> {
 		this.author = author;
 		this.names = names;
 		this.publisher = publisher;
+		
 	}
+	
 
 }
 

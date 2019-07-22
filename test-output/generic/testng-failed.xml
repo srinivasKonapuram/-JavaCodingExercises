@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [generic]">
+  <parameter name="pass" value="srinivas@96"/>
+  <parameter name="MyBrowser" value="chrome"/>
+  <parameter name="username" value="srinivas@96gmail.com"/>
+  <listeners>
+    <listener class-name="com.java.generics.MyTransform"/>
+  </listeners>
+  <test name="faceBook(failed)">
+    <classes>
+      <class name="com.java.generics.FacebookDemoWithXpath">
+        <methods>
+          <include name="login"/>
+          <include name="propertyFileload"/>
+          <include name="tearDown"/>
+          <include name="t1"/>
+        </methods>
+      </class> <!-- com.java.generics.FacebookDemoWithXpath -->
+    </classes>
+  </test> <!-- faceBook(failed) -->
+</suite> <!-- Failed suite [generic] -->
